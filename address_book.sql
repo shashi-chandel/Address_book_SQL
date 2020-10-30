@@ -49,3 +49,8 @@ INSERT INTO address_book VALUES  		#Adding data to insert
 	( 'Quinn', 'Smith', 'Street 5', 'City 2','California', '123459', '9876543229', 'Quinn@email.com');
 SELECT * FROM address_book WHERE city = 'City 2'
 ORDER BY first_name;
+
+#UC9  	
+#Ability to add name and type in address_book
+ALTER TABLE address_book ADD name VARCHAR(20);
+ALTER TABLE address_book ADD type VARCHAR(20) DEFAULT 'Friend';
