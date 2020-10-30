@@ -54,3 +54,7 @@ ORDER BY first_name;
 #Ability to add name and type in address_book
 ALTER TABLE address_book ADD name VARCHAR(20);
 ALTER TABLE address_book ADD type VARCHAR(20) DEFAULT 'Friend';
+
+#UC10
+#Get count of contact persons
+SELECT COUNT(type) FROM address_book;
