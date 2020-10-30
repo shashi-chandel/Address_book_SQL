@@ -57,7 +57,7 @@ ALTER TABLE address_book ADD type VARCHAR(20) DEFAULT 'Friend';
 
 #UC10
 #Get count of contact persons
-SELECT COUNT(type) FROM address_book;
+SELECT type, COUNT(first_name) FROM address_book GROUP BY type;
 
 #UC11
 #Adding data to insert to friend and family
