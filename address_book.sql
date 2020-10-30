@@ -58,3 +58,9 @@ ALTER TABLE address_book ADD type VARCHAR(20) DEFAULT 'Friend';
 #UC10
 #Get count of contact persons
 SELECT COUNT(type) FROM address_book;
+
+#UC11
+#Adding data to insert to friend and family
+INSERT INTO address_book VALUES   		
+	( 'Terisa', 'Brown', 'Street 2', 'City 2','California', '123457', '9876543222', 'Terisa@email.com',NULL,'Family'),
+    ('Sam', 'Hell', 'Street 4', 'City 2','Florida', '158457', '9876545482', 'samhell@email.com',NULL,'Friend');
