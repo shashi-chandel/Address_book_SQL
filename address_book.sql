@@ -73,6 +73,15 @@ CREATE TABLE user_details
  last_name 	VARCHAR(100) NOT NULL
 );
 
+CREATE TABLE location 
+(
+ user_id 	int PRIMARY KEY,
+ address 	VARCHAR(100) NOT NULL,
+ city 		VARCHAR(50) NOT NULL,
+ state 		VARCHAR(50) NOT NULL,
+ zip 		VARCHAR(10) NOT NULL
+); 
+
 ALTER TABLE location 
 ADD FOREIGN KEY(user_id) REFERENCES user_details(user_id);
 
@@ -124,3 +133,11 @@ INSERT INTO user_contact_type_link VALUES
  	(1,102),
  	(2,101),
  	(3,102);
+    
+#UC13
+#Retrieving data from individual tables
+select * from user_details;
+select * from location;
+select * from Contact;
+ select * from Contact_type;
+ select * from user_contact_type_link;
